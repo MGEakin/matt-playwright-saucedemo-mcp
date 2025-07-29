@@ -64,7 +64,7 @@ test.describe('SwagLabs Smoke Tests', () => {
     await shoppingCartPage.verifyPageLoaded();
     
     // Additional verifications
-    const itemCount = await shoppingCartPage.getCartItemCount();
+    const itemCount = await shoppingCartPage.getCartItemCountFromPage();
     expect(itemCount).toBe(1);
     
     await shoppingCartPage.verifyItemInCart(PRODUCTS.SAUCE_LABS_BACKPACK);
