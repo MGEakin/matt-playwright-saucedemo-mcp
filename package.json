@@ -1,0 +1,23 @@
+{
+  "name": "swaglabs-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright test automation framework for SwagLabs e-commerce site",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report",
+    "lint": "npx playwright test --reporter=list --list"
+  },
+  "keywords": ["playwright", "automation", "testing", "e2e", "swaglabs"],
+  "author": "Matthew Eakin <matthew.eakin@example.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.1.0",
+    "typescript": "^5.8.3"
+  }
+}
