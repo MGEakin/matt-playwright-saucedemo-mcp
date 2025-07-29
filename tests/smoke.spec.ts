@@ -41,7 +41,7 @@ test.describe('SwagLabs Smoke Tests', () => {
     await testHelper.loginAsStandardUser();
     
     const productsPage = new ProductsPage(page);
-    await productsPage.clickProductName(PRODUCTS.SAUCE_LABS_BACKPACK);
+    await productsPage.clickProductTitle(PRODUCTS.SAUCE_LABS_BACKPACK);
     
     const productDetailsPage = new ProductDetailsPage(page);
     await productDetailsPage.verifyPageLoaded();
