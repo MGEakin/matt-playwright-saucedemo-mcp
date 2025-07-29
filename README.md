@@ -97,6 +97,8 @@ This framework is designed to work seamlessly with Playwright MCP server for:
 ## 📁 Project Structure
 
 ```
+├── .github/                   # GitHub-specific documentation
+│   └── copilot-instructions.md # AI-assisted test generation guidelines
 ├── pages/                     # Page Object Model classes
 │   ├── BasePage.ts           # Abstract base page class
 │   ├── LoginPage.ts          # Login page interactions
